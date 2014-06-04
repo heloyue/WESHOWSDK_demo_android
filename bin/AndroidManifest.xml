@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tencent.weshowsdk.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+   <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tencent.weshowsdk.demo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.weshowsdk.demo.AuthActivity"
+            android:label="@string/title_activity_auth"
+            android:parentActivityName="com.tencent.weshowsdk.demo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tencent.weshowsdk.demo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.tencent.weshowsdk.demo.GetTagInfoActivity"
+            android:label="@string/title_activity_get_tag_info"
+            android:parentActivityName="com.tencent.weshowsdk.demo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tencent.weshowsdk.demo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.tencent.weshowsdk.demo.GetTagTimelineActivity"
+            android:label="@string/title_activity_get_tag_timeline"
+            android:parentActivityName="com.tencent.weshowsdk.demo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tencent.weshowsdk.demo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.tencent.weshowsdk.demo.GetVideoURLActivity"
+            android:label="@string/title_activity_get_video_url"
+            android:parentActivityName="com.tencent.weshowsdk.demo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tencent.weshowsdk.demo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.tencent.weshowsdk.demo.GetHotTagsActivity"
+            android:label="@string/title_activity_get_hot_tags"
+            android:parentActivityName="com.tencent.weshowsdk.demo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tencent.weshowsdk.demo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.tencent.weshowsdk.demo.GetChannelTimelineActivity"
+            android:label="@string/title_activity_get_channel_timeline"
+            android:parentActivityName="com.tencent.weshowsdk.demo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tencent.weshowsdk.demo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.tencent.weshowsdk.demo.GetTimelineActivity"
+            android:label="@string/title_activity_get_timeline"
+            android:parentActivityName="com.tencent.weshowsdk.demo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tencent.weshowsdk.demo.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

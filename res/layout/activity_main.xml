@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tencent.weshowsdk.demo.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.tencent.weshowsdk.demo.MainActivity$PlaceholderFragment" >
+
+        <!-- 1.获取调用权限（auth/token） -->
+
+        <Button
+            android:id="@+id/auth_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_text_auth" />
+
+        <!-- 2.获取热门频道名称（weishi/tags） -->
+
+        <Button
+            android:id="@+id/get_tags_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auth_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_text_get_tag_info" />
+
+        <!-- 3.获取频道微视消息（weishi/channeltimeline） -->
+
+        <Button
+            android:id="@+id/get_channel_timeline_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_tags_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_text_get_timeline" />
+
+        <!-- 4.获取热门标签名称（weishi/tagdiscovery） -->
+
+        <Button
+            android:id="@+id/get_tag_discovery_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_channel_timeline_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_text_get_tag_discovery" />
+
+        <!-- 5.获取推荐标签名称（weishi/hottag） -->
+
+        <Button
+            android:id="@+id/get_hot_tags_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_tag_discovery_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_text_get_hot_tag_info" />
+
+        <!-- 6.获取标签微视消息（weishi/timeline） -->
+
+        <Button
+            android:id="@+id/get_tag_timeline_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_hot_tags_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_text_get_tag_timeline" />
+
+        <!-- 7.获取视频播放地址（weishi/getvideourl） -->
+
+        <Button
+            android:id="@+id/get_video_url_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_tag_timeline_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_text_get_video_url" />
+
+        <!-- 8.获取某人原创微视消息（weishi/other） -->
+
+        <Button
+            android:id="@+id/get_orig_timeline_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_video_url_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_text_get_orig_timeline" />
+        
+        <!-- 9.视频播放上报() -->
+
+        <Button
+            android:id="@+id/report_play_video_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/exit_button"
+            android:layout_toLeftOf="@+id/exit_button"
+            android:text="@string/button_text_report_play_video" />
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/get_orig_timeline_button"
+            android:layout_below="@+id/get_orig_timeline_button"
+            android:text="@string/button_text_exit" />
+
+    </RelativeLayout>
+
+</FrameLayout>

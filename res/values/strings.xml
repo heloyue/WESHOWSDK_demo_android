@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common string -->
+    <string name="app_name">Weshow SDK Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- action string -->
+    <string name="action_settings">设置</string>
+    <string name="action_exit">退出</string>
+    <!-- button string -->
+    <string name="button_text_auth">获取调用权限</string>
+    <string name="button_text_get_tag_info">获取热门频道名称</string>
+    <string name="button_text_get_timeline">获取频道微视消息</string>
+    <string name="button_text_get_tag_discovery">获取热门标签名称</string>
+    <string name="button_text_get_hot_tag_info">获取推荐标签名称</string>
+    <string name="button_text_get_tag_timeline">获取标签微视消息</string>
+    <string name="button_text_get_video_url">获取视频播放地址</string>
+    <string name="button_text_get_orig_timeline">获取某人原创微视消息</string>
+    <string name="button_text_report_play_video">视频播放次数上报</string>
+    <string name="button_text_exit">退出</string>
+    <!-- activity title string -->
+    <string name="title_activity_data_result">执行结果</string>
+    <string name="title_activity_auth">鉴权</string>
+    <string name="title_activity_get_tag_info">获取标签信息</string>
+    <string name="title_activity_get_tag_timeline">获取标签下微视</string>
+    <string name="title_activity_get_video_url">获取微视下载地址</string>
+    <string name="title_activity_get_hot_tags">获取热门标签列表</string>
+    <string name="title_activity_get_channel_timeline">获取频道微视</string>
+    <string name="title_activity_get_timeline">获取原创微视</string>
+
+</resources>
